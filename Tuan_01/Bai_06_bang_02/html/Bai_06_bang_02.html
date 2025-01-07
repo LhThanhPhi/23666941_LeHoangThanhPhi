@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/Bai_06_bang_02.css" />
+    <title>Document</title>
+    <style>
+      .size {
+        display: inline-block;
+        width: 80px;
+      }
+      .size1 {
+        display: inline-block;
+        width: 100px;
+      }
+      .conatiner {
+        display: inline-block;
+        width: 750px;
+        border: 1px solid #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="conatiner">
+      <h2>Contact Us</h2>
+      <form action="">
+        <fieldset>
+          <legend>Your message</legend>
+
+          <label for="to" class="size">To :</label>
+          <input type="text" name="to" id="to" value="Example Cafe" />
+
+          <br />
+
+          <label for="email" class="size">Your email :</label>
+          <input type="text" name="email" id="email" />
+
+          <br />
+
+          <div class="textarea">
+            <label for="mes" class="size">Message : </label>
+            <textarea name="mes" id="mes" cols="40" rows="10"></textarea>
+          </div>
+
+          <label for="">Attach File</label>
+          <input type="file" name="" id="" />
+        </fieldset>
+
+        <fieldset>
+          <legend>How do you found us</legend>
+
+          <label for="gg">How did you hear of us</label>
+          <select name="gg" id="gg">
+            <option value="Google">Google</option>
+            <option value=""></option>
+            <option value=""></option>
+          </select>
+
+          <br />
+
+          <label for="click" class="size1">Newsletter</label>
+          <input type="checkbox" name="click" id="click" />
+          <label for="click"
+            >Ensure this box is checked if you would like to receive email
+            update</label
+          >
+        </fieldset>
+
+        <input type="submit" value="Send message" style="margin-bottom: 15px" />
+      </form>
+    </div>
+  </body>
+</html>
