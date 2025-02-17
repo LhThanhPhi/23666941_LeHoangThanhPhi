@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.container {
+  width: 996px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+header {
+  padding: 20px 0;
+  border-bottom: 1px solid #4a4a4a;
+}
+header .head {
+  color: brown;
+  text-align: center;
+  text-shadow: 5px 25px 12px rgb(211, 114, 114);
+}
+section .link {
+  display: block;
+  text-decoration: none;
+  border-bottom: 1px solid #4a4a4a;
+  padding-left: 38px;
+  color: #6f3de4;
+}
+.starter {
+  font-size: 2rem;
+  color: brown;
+  padding: 0px;
+  background-color: #ee7888;
+}
+.dessert {
+  font-size: 2rem;
+  color: brown;
+  padding: 0px;
+  background-color: #ee7888;
+}
+.v {
+  color: red;
+  text-decoration: underline;
+}
+.btt {
+  color: red;
+}
+.menu {
+  margin-bottom: 50px;
+}

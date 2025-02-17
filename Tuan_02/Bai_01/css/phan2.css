@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.container {
+  width: 996px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+header {
+  padding: 20px 0 0 0;
+  border-bottom: 1px solid #4a4a4a;
+}
+header .head {
+  color: brown;
+  text-align: center;
+  text-shadow: 5px 25px 12px rgb(211, 114, 114);
+}
+section .link {
+  display: block;
+  text-decoration: none;
+  border-bottom: 1px solid #4a4a4a;
+  padding-left: 38px;
+  color: #6f3de4;
+}
+.starter {
+  font-size: 2rem;
+  color: brown;
+  padding: 0px;
+  background-color: #ee7888;
+}
+.dessert {
+  font-size: 2rem;
+  color: brown;
+  padding: 0px;
+  background-color: #ee7888;
+}
+.v {
+  color: red;
+  text-decoration: underline;
+}
+.btt {
+  color: red;
+}
+.menu {
+  margin-bottom: 50px;
+}
+.logo {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 5px;
+  left: 140px;
+}
+.nav {
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ee7888;
+  height: 50px;
+}
+.choose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+.choose a {
+  text-decoration: none;
+  color: black;
+  border: 1px solid rgb(73, 73, 154);
+  padding: 15px 50px;
+}
