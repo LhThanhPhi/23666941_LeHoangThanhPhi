@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+td {
+  display: inline-block;
+}
+.container {
+  width: 1024px;
+  margin: 0 auto;
+  border: 1px solid #000;
+  position: relative;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  width: 35%;
+  padding: 5px 10px;
+  font-size: 17px;
+}
+.logo img {
+  width: 60px;
+}
+.head {
+  display: flex;
+  background-color: #304c7c;
+  color: #fff;
+}
+
+.nav {
+  display: flex;
+  position: absolute;
+  top: 57px;
+  right: 5px;
+}
+.nav li {
+  color: #fff;
+  padding: 5px 10px;
+  background-color: #4074ac;
+  margin: 0 10px;
+  font-size: 17px;
+}
+.search {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+.navigation input {
+  background-color: #203454;
+  color: #fff;
+  padding: 3px 6px;
+}
+input::placeholder {
+  color: #fff;
+}
+.main {
+  display: flex;
+  color: gray;
+  padding: 0 0 20px 0;
+}
+.rose {
+  width: 240px;
+}
+.content-left {
+  width: 40%;
+}
+.content-center {
+  width: 30%;
+}
+.content-right {
+  width: 30%;
+  background-color: #fffcfc;
+  position: absolute;
+  top: 120px;
+  right: 0;
+  padding: 10px 20px;
+}
+.title {
+  border-bottom: 2px dashed #a52a2a7e;
+  padding: 30px 0 10px 10px;
+  color: gray;
+}
+.main .desc {
+  color: rgb(255, 128, 0);
+  font-style: italic;
+  text-shadow: 4px 4px 3px green;
+  padding: 10px 10px;
+}
+td {
+  margin: 5px 10px;
+}
+main input {
+  padding: 3px 6px;
+}
+.info {
+  padding: 5px 0;
+  border-bottom: 2px dashed #a52a2a7e;
+}
+.centerhead {
+  margin: 10px 0;
+}
+.centerbody {
+  margin: 30px 0 20px 0;
+}
+.content-right h2 {
+  padding: 10px 0;
+  border-bottom: 2px dashed #a52a2a7e;
+}
+.content-right img {
+  margin: 25px 0;
+}
+.readmore {
+  color: blue;
+  font-weight: bold;
+  position: absolute;
+  top: 320px;
+  right: 30px;
+}
+.footer {
+  background-color: #203454;
+  display: flex;
+  padding: 10px 10px;
+  gap: 5px;
+}
+.footer p {
+  color: #fff;
+}
+.footer a {
+  color: #4074ac;
+}
