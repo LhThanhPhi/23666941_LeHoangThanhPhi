@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example Cafe Menu</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <style>
+      .head {
+        text-align: center;
+        font-style: italic;
+        color: #b03a48;
+      }
+      .nav a {
+        text-decoration: none;
+        color: black;
+      }
+      .list-drink li {
+        background-color: #e88996;
+        padding: 10px;
+        margin: 10px 0;
+        border-radius: 20px;
+        list-style: none;
+        text-align: center;
+        color: white;
+      }
+      .starter,
+      .dessert,
+      .info {
+        background-color: #e88996;
+        padding: 5px;
+        margin: 5px auto;
+        letter-spacing: 10px;
+        color: #b03a48;
+      }
+      .even {
+        background-color: black;
+        color: white;
+        padding: 20px;
+      }
+      .copyright {
+        text-align: center;
+        font-style: italic;
+        margin: 20px 0;
+      }
+      .btn {
+        margin-right: 10px;
+      }
+      .pic {
+        display: block;
+        margin: auto;
+        width: 200px;
+        border-radius: 50%;
+        border: 5px solid #e88996;
+      }
+      .input {
+        width: 250px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container border border-1 border-black">
+      <header>
+        <h1 class="head" style="text-shadow: 8px 8px 0.5px rgb(224, 108, 128)">
+          EXAMPLE CAFE MENU
+        </h1>
+        <nav
+          class="border border-1 border-secondary p-1 d-flex justify-content-evenly"
+          style="background-color: rgb(242, 161, 161)"
+        >
+          <a href="#top"
+            ><img
+              src="../img/icons8-home-50.png"
+              alt=""
+              class="w-75 border-end border-primary p-1"
+          /></a>
+          <ul class="d-flex align-items-center">
+            <li class="list-unstyled border-end border-primary">
+              <a href="#" class="text-decoration-none mx-3 fs-5 text-white"
+                >Starter</a
+              >
+            </li>
+            <li class="list-unstyled border-end border-primary">
+              <a href="#" class="text-decoration-none mx-3 fs-5 text-white"
+                >Main Courses</a
+              >
+            </li>
+            <li class="list-unstyled border-end border-primary">
+              <a href="#" class="text-decoration-none mx-3 fs-5 text-white"
+                >Desserts</a
+              >
+            </li>
+          </ul>
+          <form action="" class="search">
+            <input type="text" name="search" id="search" />
+            <input type="submit" value="Go" />
+          </form>
+        </nav>
+      </header>
+      <div class="row">
+        <div class="col-md-3">
+          <ul class="list-drink">
+            <li>Café Latte</li>
+            <li>Capuchino</li>
+            <li>Ocean Blue</li>
+            <li>Ice-cream Cafe</li>
+            <li>Order Online</li>
+          </ul>
+          <img src="../img/class.png" alt="class" class="pic" />
+        </div>
+        <div class="col-md-6">
+          <section>
+            <h2 class="text-danger text-center d-inline-block starter">
+              Starter
+            </h2>
+            <ul>
+              <li>
+                Chesnut and Mushroom Goujons
+                <span class="text-danger text-decoration-underline">(v)</span>
+              </li>
+              <li>
+                Goat Cheese
+                <span class="text-danger text-decoration-underline">(v)</span>
+              </li>
+              <li>
+                <strong style="color: rgb(221, 190, 54)"
+                  >HONEY SOY CHICKEN KEBABS</strong
+                >
+                <span class="text-danger text-decoration-underline">(V)</span>
+              </li>
+              <li>
+                Seafood Salad
+                <span class="text-danger text-decoration-underline">(v)</span>
+              </li>
+            </ul>
+            <a href="#top" class="text-danger">Back to Top</a>
+          </section>
+
+          <section>
+            <h2 class="text-danger text-center d-inline-block dessert">
+              Desserts
+            </h2>
+            <ul>
+              <li>
+                Lemon Sorbet
+                <span class="text-danger text-decoration-underline">(v)</span>
+              </li>
+              <li>
+                Chocolate Mud Pie
+                <span class="text-danger text-decoration-underline">(v)</span>
+              </li>
+              <li>
+                Pecan Pie
+                <span class="text-danger text-decoration-underline">(v)</span>
+              </li>
+              <li>
+                Selection of fine Cheeses from Around the World
+                <span class="text-danger text-decoration-underline">(v)</span>
+              </li>
+            </ul>
+            <a href="#top" class="text-danger">Back to Top</a>
+          </section>
+          <h2 class="info d-inline-block">INFORMATION</h2>
+          <form>
+            <input
+              class="input"
+              type="text"
+              name="fn"
+              id="fn"
+              class="input"
+              placeholder="First name"
+            />
+            <input
+              class="input"
+              type="text"
+              name="ln"
+              id="ln"
+              class="input"
+              placeholder="Last name"
+            />
+            <input
+              class="input"
+              type="text"
+              name="em"
+              id="em"
+              class="input"
+              placeholder="Email"
+            />
+            <input
+              class="input"
+              type="text"
+              name="tl"
+              id="tl"
+              class="input"
+              placeholder="telephone"
+            />
+            <select name="usa" id="usa" style="width: 170px" class="input">
+              <option value="1">USA</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            <input type="radio" name="ra" id="vn" />
+            <label for="vn">Vietnamese</label>
+
+            <input type="radio" name="ra" id="fr" />
+            <label for="fr">Foreigner</label>
+
+            <textarea
+              name="mes"
+              id="mes"
+              placeholder="comment"
+              rows="5"
+              style="width: 84%; display: block"
+            >
+            </textarea>
+            <button type="submit" class="btn btn-light">Submit</button>
+            <button type="button" class="btn btn-light">Cancel</button>
+          </form>
+        </div>
+        <div class="col-md-3 even">
+          <h2>Events</h2>
+          <h3>Regular Meetings</h3>
+          <img src="../img/meeting.png" alt="" width="250px" />
+          <p>
+            Host your regular team meetings or activities in the comfort of your
+            own private room. <a href="#">Read more...</a>
+          </p>
+          <h3>Product Launches</h3>
+          <img src="../img/class.png" alt="" width="250px" />
+          <p>
+            Launch your product with ease in a space that truly fits its image.
+            <a href="#">Read more...</a>
+          </p>
+        </div>
+      </div>
+      <footer
+        style="background-color: #d37272; padding: 3px 6px"
+        class="text-white"
+      >
+        <p class="copyright">
+          ABC Company &copy; - 12345678 - abccoffee@gmail.com
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
