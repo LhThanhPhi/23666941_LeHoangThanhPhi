@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+
+        }
+        .link{
+            transition: 2s;
+        }
+        .nav-link{
+            color: #fff;
+        }
+        .link :hover{
+            color: yellow;
+            transform: translatey(-5px);
+            transform: skew(2px);
+        }
+        input{
+            display: block; 
+            width: 100%;
+            margin:15px ;
+            height: 40px;
+        }
+    </style>
+</head>
+<body >
+    <div class="container ">
+        <header class="d-flex align-items-center justify-content-between mt-2 p-3"  style="background-image: linear-gradient(to right,#0d0e10,#101415,#373f42) ;" >
+            <span class="text-white">Feare</span>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item link"><a href="../html/home.html" class="nav-link px-3">HOME</a></li>
+                    <li class="nav-item link"><a href="../html/menu.html" class="nav-link px-3">MENU</a></li>
+                    <li class="nav-item link"><a href="../html/about.html" class="nav-link px-3 ">ABOUT</a></li>
+                    <li class="nav-item link"><a href="../html/book.html" class="nav-link px-3 ">BOOK TABLE</a></li>
+                </ul>
+            </nav>
+            <div class="px-2 d-flex align-items-center justify-content-between mt-2">
+            <span class="px-2"><svg xmlns="http://www.w3.org/2000/svg " width="20px" viewBox="0 0 448 512"><path  fill="#ffffff" d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/></svg></i></span>
+            <span class="px-2"><svg xmlns="http://www.w3.org/2000/svg" width="20px"viewBox="0 0 576 512"><path fill="#fcfcfc" d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg></span>
+            <span class="px-2"><svg xmlns="http://www.w3.org/2000/svg" width="20px" viewBox="0 0 512 512"><path fill="#ffffff" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></span>
+            <button class="btn btn-warning rounded-5 px-2" style="border-radius: 25px;">Order Online</button>
+            </div>
+        </header>
+        <main class="row d-flex justify-content-center align-items-center" style="margin-top: 100px;">
+            <div class="col-5">
+                <h2 style="font-style: italic; font-family: 'Times New Roman', Times, serif;">Book A Table</h2>
+                <form action="">
+                    <input type="text" name="name" id="name" placeholder="Your Name">
+                    <input type="tel" name="phone" id="phone" placeholder="Phone Number">
+                    <input type="email" name="email" id="email" placeholder="Your Email">
+                    <input type="number" name="per" id="per" placeholder=" How Many Persion?">
+                    <input type="date" name="date" id="date" >
+                </form>
+                <button class="btn btn-warning rounded-5 px-2" style="border-radius: 25px;">Book Now</button>
+            </div>
+            <div class="col-5">
+                <img src="../image/map.png" alt="" class="w-100">
+            </div>
+        </main>
+    </div>
+</body>
+</html>
