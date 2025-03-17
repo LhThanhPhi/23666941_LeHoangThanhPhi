@@ -1,0 +1,11 @@
+a{
+    color: #000;
+}
+.nav-link{
+    transition: 0.1s;
+}
+.nav-link:hover{
+    color: red;
+    font-weight: bold;
+    transform: translateY(-5px) scale(1.1);
+}

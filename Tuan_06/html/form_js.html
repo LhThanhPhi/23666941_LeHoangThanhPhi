@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container ">
+        <header class="row d-flex align-items-center justify-content-between">
+            <div class="col-3">
+                <img src="../image/image.png" alt="anh" width="250px">
+            </div>
+            <nav class="col-6">
+                <ul class="nav ">
+                    <li class="nav-item"><a href="#" class="nav-link ">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link ">Sinh Viên</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link ">Đăng ký hp</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link ">Đoàn IUH</a></li>
+                </ul>
+            </nav>
+            <div class="col-3">
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#sign">Đăng Nhập</button>
+            </div>
+        </header>
+        <main class="row mt-5" >
+            <table class="table" id="table">
+                <thead>
+                    <tr>
+                        <th>Stt</th>
+                        <th>Tên</th>
+                        <th>Ngày sinh</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+                </tbody>
+                <tfoot>
+                </tfoot>
+            </table>
+        </main>
+        <footer class="row" >
+        </footer>
+    </div>
+    <!-- modal popup -->
+    <div class="modal" id="sign">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4>Sign In</h4>
+                    <button type="button" class="btn btn-danger btn-close" data-bs-dismiss="modal">X</button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <label for="name">Your Name</label><br>
+                        <input type="text" name="name" id="name" placeholder="Your Name" class="form-control" onblur="checkOfName()">
+                        <span class="check-name"></span><br>
+
+                        <label for="date">Your Birth Day</label><br>
+                        <input type="date" name="date" id="date" class="form-control" onblur="checkOfDate()">
+                        <span class="check-date "></span>
+                        <br>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" onclick="signIn()" >Sign In</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- js  -->
+     <script src="../js/jquery-3.7.1.min.js"></script>
+     <script src="../js/bootstrap.bundle.min.js"></script>
+     <script src="../js/main.js"></script>
+</body>
+</html>
